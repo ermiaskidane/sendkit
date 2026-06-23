@@ -1,0 +1,11 @@
+{
+  "name": "sendkit-workspace",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:cli": "bun run packages/cli/src/index.ts"
+  }
+}
