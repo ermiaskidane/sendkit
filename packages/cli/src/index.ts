@@ -1,6 +1,6 @@
 // ######################### 1 step solution #########################################
 import { Command } from "commander";
-import { sendTelegramMessage } from "sendkit-core";
+import { sendTelegramMessage } from "@er_dev/sendkit-core";
 import { z } from "zod";
 import { dirname, join } from "node:path";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
