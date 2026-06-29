@@ -35,10 +35,8 @@ function getTelegramBotToken() {
   return token;
 }
 
-program
-  .name("sendkit")
-  .description("SendKit CLI backed by sendkit-core")
-  
+program.name("sendkit").description("SendKit CLI backed by sendkit-core");
+
 // https://github.com/tj/commander.js
 program
   .command("init")
@@ -68,7 +66,6 @@ await program.parseAsync(process.argv).catch((error: unknown) => {
   console.error(error instanceof Error ? error.message : String(error));
   process.exitCode = 1;
 });
-
 
 // ######################### 2 step solution #########################################
 
@@ -169,8 +166,8 @@ await program.parseAsync(process.argv).catch((error: unknown) => {
 //       headers: {
 //         "Content-Type": "application/json",
 //       },
-//       body: JSON.stringify({ 
-//         chat_id: chatId, 
+//       body: JSON.stringify({
+//         chat_id: chatId,
 //         text: message,
 //        }),
 //     });
@@ -196,4 +193,3 @@ await program.parseAsync(process.argv).catch((error: unknown) => {
 // program.parseAsync(process.argv);
 
 // https://api.telegram.org/bot8943498387:AAEa-ktlLUQHmKV7vjWAeahavn1M4IfyjwE/getUpdates
-

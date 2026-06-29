@@ -1,11 +1,7 @@
 {
   "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "sendkit"
-  ],
+  "enabledMcpjsonServers": ["sendkit"],
   "permissions": {
-    "allow": [
-      "mcp__sendkit__telegram"
-    ]
+    "allow": ["mcp__sendkit__telegram"]
   }
 }

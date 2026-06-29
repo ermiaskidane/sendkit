@@ -8,6 +8,7 @@ sendkit-visual-diagram.png
 opencode.json
 # dependencies
 /node_modules
+/packages/cli/node_modules
 /dist
 /.pnp
 .pnp.js

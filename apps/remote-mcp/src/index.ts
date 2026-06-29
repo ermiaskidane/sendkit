@@ -126,7 +126,7 @@ const port = Number(process.env.PORT ?? 3000);
 //   fetch: app.fetch,
 // }
 
-//since the protocol switch from https to http, we need to handle the request manually as below 
+//since the protocol switch from https to http, we need to handle the request manually as below
 export default {
   port,
   fetch: (req: Request) => {
