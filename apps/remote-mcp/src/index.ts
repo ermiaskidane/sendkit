@@ -4,7 +4,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { generateClerkProtectedResourceMetadata } from "@clerk/mcp-tools/server";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 
-import { sendTelegramMessage, telegramMessageInputSchema } from "sendkit-core";
+import { sendTelegramMessage, telegramMessageInputSchema } from "@er_dev/sendkit-core";
 
 const clerkPublishableKey = process.env.CLERK_PUBLISHABLE_KEY;
 const clerkSecretKey = process.env.CLERK_SECRET_KEY;
@@ -126,7 +126,7 @@ const port = Number(process.env.PORT ?? 3000);
 //   fetch: app.fetch,
 // }
 
-//since the protocol switch from https to http, we need to handle the request manually as below 
+//since the protocol switch from https to http, we need to handle the request manually as below
 export default {
   port,
   fetch: (req: Request) => {
