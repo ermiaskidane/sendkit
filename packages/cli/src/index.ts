@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // ######################### 1 step solution #########################################
 import { Command } from "commander";
 import { sendTelegramMessage } from "@er_dev/sendkit-core";
