@@ -14,6 +14,7 @@ opencode.json
 .pnp.js
 .yarn/install-state.gz
 
+.agents
 # testing
 /coverage
 
